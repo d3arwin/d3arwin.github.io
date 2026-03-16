@@ -1,17 +1,24 @@
 :root {
-  --bg-0: #070405;
-  --bg-1: #12090b;
-  --bg-2: #1b0e12;
+  --tamu-maroon: #500000;
+  --tamu-maroon-dark: #3b0000;
+  --tamu-maroon-deep: #210000;
+  --tamu-cream: #f7f4ef;
+  --tamu-cream-soft: #e5ded5;
+  --tamu-tan: #c9b08a;
+  --ink-invert: #101012;
+  --bg-0: #0b0405;
+  --bg-1: #150607;
+  --bg-2: #220a0c;
   --panel: rgba(10, 18, 38, 0.6);
   --panel-strong: rgba(9, 16, 31, 0.82);
   --line: rgba(212, 176, 176, 0.2);
-  --text: #f9f4ef;
-  --text-soft: #d8c9c9;
-  --text-dim: #a98f8f;
-  --cyan: #d9c2c2;
-  --mint: #f4ebdf;
-  --sun: #c8a25a;
-  --violet: #7a4a4a;
+  --text: var(--tamu-cream);
+  --text-soft: #d7c6c6;
+  --text-dim: #ab8f8f;
+  --cyan: var(--tamu-cream-soft);
+  --mint: var(--tamu-cream);
+  --sun: var(--tamu-tan);
+  --violet: #7e4a4a;
   --radius-xl: 28px;
   --radius-lg: 20px;
   --radius-md: 14px;
@@ -78,13 +85,13 @@ body::before {
 .aurora-left {
   top: -10rem;
   left: -8rem;
-  background: #6b2327;
+  background: var(--tamu-maroon);
 }
 
 .aurora-right {
   top: -4rem;
   right: -8rem;
-  background: #b08a53;
+  background: var(--tamu-tan);
 }
 
 .grain {
@@ -138,9 +145,9 @@ body::before {
 }
 
 .nav-link.active {
-  color: #07101c;
+  color: var(--ink-invert);
   border-color: transparent;
-  background: linear-gradient(135deg, var(--mint), #dcc5aa);
+  background: linear-gradient(135deg, var(--mint), var(--tamu-cream-soft));
   box-shadow: 0 8px 18px rgba(200, 162, 90, 0.2);
 }
 
@@ -304,8 +311,8 @@ h3 {
 }
 
 .button.primary {
-  color: #07101c;
-  background: linear-gradient(135deg, var(--mint), #ddc6aa);
+  color: var(--ink-invert);
+  background: linear-gradient(135deg, var(--mint), var(--tamu-cream-soft));
   border-color: transparent;
   font-weight: 600;
 }
@@ -385,7 +392,7 @@ h3 {
 .core-node {
   width: 1.15rem;
   height: 1.15rem;
-  background: linear-gradient(135deg, var(--mint), #dcc5aa);
+  background: linear-gradient(135deg, var(--mint), var(--tamu-cream-soft));
   box-shadow: 0 0 32px rgba(200, 162, 90, 0.45);
 }
 
