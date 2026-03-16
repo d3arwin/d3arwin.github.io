@@ -37,6 +37,19 @@ body {
     linear-gradient(160deg, var(--bg-0), var(--bg-1) 45%, var(--bg-2));
   min-height: 100vh;
   overflow-x: hidden;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 300ms ease, transform 300ms ease;
+}
+
+body.is-ready {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+body.is-leaving {
+  opacity: 0;
+  transform: translateY(-8px);
 }
 
 body::before {
@@ -134,6 +147,24 @@ body::before {
 .nav-icon {
   font-size: 1rem;
   line-height: 1;
+}
+
+.micro-icon {
+  width: 1.4rem;
+  height: 1.4rem;
+  color: var(--cyan);
+  stroke-dasharray: 120;
+  stroke-dashoffset: 0;
+  transition: transform 260ms ease, color 260ms ease, stroke-dashoffset 360ms ease;
+}
+
+.portal-card:hover .micro-icon,
+.card:hover .micro-icon,
+.panel:hover .micro-icon,
+.profile-card:hover .micro-icon {
+  transform: rotate(-6deg) scale(1.06);
+  color: var(--mint);
+  stroke-dashoffset: 120;
 }
 
 .hero,
@@ -633,6 +664,17 @@ canvas {
   overflow: hidden;
 }
 
+.reveal-item {
+  opacity: 0;
+  transform: translateY(14px) scale(0.99);
+}
+
+.reveal-item.in-view {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  transition: opacity 420ms ease, transform 420ms ease;
+}
+
 .profile-card img {
   width: 100%;
   aspect-ratio: 4 / 5;
@@ -802,6 +844,10 @@ footer {
   .nav-link {
     padding: 0.44rem 0.78rem;
     font-size: 0.75rem;
+  }
+
+  .nav-icon {
+    font-size: 0.92rem;
   }
 
   .panel,

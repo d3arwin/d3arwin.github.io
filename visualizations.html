@@ -47,7 +47,7 @@
       <section class="viz-grid">
         <article class="panel">
           <p class="section-kicker">Diffusion view</p>
-          <span class="material-symbols-rounded card-icon">multiline_chart</span>
+          <svg class="micro-icon" aria-hidden="true" focusable="false"><use href="assets/icons.svg#icon-viz"></use></svg>
           <h2>Uncertainty propagation over connected mission states</h2>
           <canvas id="diffusionCanvas" width="560" height="320" aria-label="Graph uncertainty diffusion demo"></canvas>
           <p class="viz-caption">Node intensity indicates uncertainty mass after each diffusion step.</p>
@@ -55,7 +55,7 @@
 
         <article class="panel">
           <p class="section-kicker">State dynamics</p>
-          <span class="material-symbols-rounded card-icon">account_tree</span>
+          <svg class="micro-icon" aria-hidden="true" focusable="false"><use href="assets/icons.svg#icon-arch"></use></svg>
           <h2>Adaptive mission mode transitions</h2>
           <canvas id="fsmCanvas" width="560" height="320" aria-label="State transition demo"></canvas>
           <p class="viz-caption">Transition emphasis shifts as confidence and mission pressure vary.</p>
@@ -64,7 +64,7 @@
 
       <section class="panel">
         <p class="section-kicker">Decision branch explorer</p>
-        <span class="material-symbols-rounded card-icon">conversion_path</span>
+        <svg class="micro-icon" aria-hidden="true" focusable="false"><use href="assets/icons.svg#icon-gear"></use></svg>
         <h2>Branching policy candidates under uncertainty</h2>
         <div id="optionsTree" class="options-tree" aria-live="polite"></div>
       </section>
@@ -75,5 +75,6 @@
     </footer>
 
     <script src="assets/js/visualizations.js"></script>
+    <script src="assets/js/ui-effects.js"></script>
   </body>
 </html>
