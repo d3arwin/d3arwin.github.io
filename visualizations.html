@@ -6,7 +6,7 @@
     <title>Visualizations | ORACLE-MESH</title>
     <meta
       name="description"
-      content="Interactive visualizations for uncertainty diffusion, tactical options trees, and GP-FSM state flow in ORACLE-MESH."
+      content="Interactive visualizations for uncertainty flow, branching decisions, and adaptive state dynamics in ORACLE-MESH."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -34,30 +34,30 @@
       <p class="badge">Interactive Lab</p>
       <h1>Uncertainty and policy dynamics</h1>
       <p class="lede">
-        Explore how uncertainty spreads across mission graphs, how finite states evolve,
-        and how tactical options branch under changing confidence.
+        Explore how uncertainty spreads across mission structures, how operational
+        states evolve, and how decision branches shift under changing confidence.
       </p>
     </header>
 
     <main>
       <section class="viz-grid">
         <article class="panel">
-          <p class="section-kicker">Graph diffusion</p>
-          <h2>Uncertainty propagation on a mission graph</h2>
+          <p class="section-kicker">Diffusion view</p>
+          <h2>Uncertainty propagation over connected mission states</h2>
           <canvas id="diffusionCanvas" width="560" height="320" aria-label="Graph uncertainty diffusion demo"></canvas>
           <p class="viz-caption">Node intensity indicates uncertainty mass after each diffusion step.</p>
         </article>
 
         <article class="panel">
-          <p class="section-kicker">GP-FSM</p>
-          <h2>Finite-state mission mode transitions</h2>
-          <canvas id="fsmCanvas" width="560" height="320" aria-label="GP-FSM transition demo"></canvas>
+          <p class="section-kicker">State dynamics</p>
+          <h2>Adaptive mission mode transitions</h2>
+          <canvas id="fsmCanvas" width="560" height="320" aria-label="State transition demo"></canvas>
           <p class="viz-caption">Transition emphasis shifts as confidence and mission pressure vary.</p>
         </article>
       </section>
 
       <section class="panel">
-        <p class="section-kicker">Tactical options tree</p>
+        <p class="section-kicker">Decision branch explorer</p>
         <h2>Branching policy candidates under uncertainty</h2>
         <div id="optionsTree" class="options-tree" aria-live="polite"></div>
       </section>
