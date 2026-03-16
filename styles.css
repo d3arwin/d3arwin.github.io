@@ -349,11 +349,7 @@ h3 {
 }
 
 .mesh-frame::after {
-  inset: auto 8% 8% auto;
-  width: 26%;
-  height: 26%;
-  border-radius: 22px;
-  border-color: rgba(111, 232, 255, 0.12);
+  display: none;
 }
 
 .hero-diagram {
