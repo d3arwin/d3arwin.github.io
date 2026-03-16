@@ -6,65 +6,122 @@
     <title>ORACLE-MESH</title>
     <meta
       name="description"
-      content="ORACLE-MESH is a benchmark-first platform for uncertainty-aware GP inference over networked data streams."
+      content="ORACLE-MESH delivers uncertainty quantification across multi-fidelity models, lean digital twins, and computational-agent orchestration."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Sora:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <div class="aurora aurora-left"></div>
+    <div class="aurora aurora-right"></div>
     <div class="grain"></div>
     <header class="hero">
-      <p class="badge">ORACLE-MESH</p>
-      <h1>Operational Risk-Aware Calibration and Learning Engine for Multi-source Epistemic State Harmonization</h1>
-      <p class="lede">
-        A benchmark-first framework for selecting scalable Gaussian Process backends
-        (JAX or PyTorch) under calibrated uncertainty, latency pressure, and
-        multi-node assimilation constraints.
-      </p>
-      <div class="cta-row">
-        <a class="button primary" href="https://github.com/isrlab/oracle-mesh">Repository</a>
-        <a class="button" href="https://github.com/isrlab/oracle-mesh/tree/main/docs/benchmark">Benchmark Docs</a>
+      <div class="hero-copy">
+        <p class="badge">ORACLE-MESH</p>
+        <p class="expansion">Operational Risk-Aware Calibration and Learning Engine for Multi-source Epistemic State Harmonization</p>
+        <h1>Uncertainty systems for lean digital twins and agent-driven orchestration.</h1>
+        <p class="lede">
+          ORACLE-MESH is built for uncertainty quantification across multi-fidelity
+          models, offline design exploration, and online orchestration through
+          computational agents operating over evolving data streams.
+        </p>
+        <div class="signal-row">
+          <span>Multi-fidelity UQ</span>
+          <span>Lean digital twins</span>
+          <span>Offline design</span>
+          <span>Online orchestration</span>
+        </div>
+        <div class="cta-row">
+          <a class="button primary" href="https://github.com/isrlab/oracle-mesh">Repository</a>
+          <a class="button" href="#mission">Use Cases</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="mesh-frame">
+          <div class="ring ring-a"></div>
+          <div class="ring ring-b"></div>
+          <div class="ring ring-c"></div>
+          <div class="core-node"></div>
+          <div class="pulse pulse-a"></div>
+          <div class="pulse pulse-b"></div>
+          <div class="tag tag-a">uncertainty fields</div>
+          <div class="tag tag-b">twin state</div>
+          <div class="tag tag-c">agent loops</div>
+        </div>
       </div>
     </header>
 
     <main>
-      <section class="panel">
-        <h2>Core Mission</h2>
+      <section class="panel mission" id="mission">
+        <div>
+          <p class="section-kicker">Mission profile</p>
+          <h2>Designed for uncertainty-first operations.</h2>
+        </div>
         <p>
-          ORACLE-MESH evaluates and operationalizes uncertainty-aware inference pipelines
-          that maintain calibration while trading off speed and fidelity.
+          The platform links model hierarchies, sparse data, and agent-mediated control
+          into a single decision surface. It is optimized for calibrated uncertainty,
+          lightweight digital-twin deployment, and orchestration that can move from
+          offline planning to live operational updates without changing the governing frame.
         </p>
-        <ul>
-          <li>Canonical spring-mass-damper benchmark with parametric uncertainty</li>
-          <li>Parity runners for JAX and PyTorch tracks</li>
-          <li>Weighted decision matrix for backend selection</li>
-        </ul>
       </section>
 
-      <section class="grid">
+      <section class="grid use-cases">
         <article class="card">
-          <h3>01. Benchmark Contract</h3>
+          <p class="card-index">01</p>
+          <h3>Multi-fidelity fusion</h3>
           <p>
-            Fixed seeds, reproducible splits, and mandatory calibration and latency metrics.
+            Blend high-cost and low-cost models into calibrated uncertainty envelopes that
+            stay actionable during design and deployment.
           </p>
         </article>
         <article class="card">
-          <h3>02. Dual-Track Execution</h3>
+          <p class="card-index">02</p>
+          <h3>Lean digital twins</h3>
           <p>
-            Side-by-side implementation paths for tinygp or GPJax and GPyTorch.
+            Maintain compact operational twins that preserve epistemic state without dragging
+            around the full burden of heavyweight simulation stacks.
           </p>
         </article>
         <article class="card">
-          <h3>03. Decision Gates</h3>
+          <p class="card-index">03</p>
+          <h3>Agentic orchestration</h3>
           <p>
-            No backend wins unless it passes uncertainty, stability, and runtime gates.
+            Coordinate offline design studies, intervention policies, and live update loops
+            through computational agents that act on uncertainty, not point estimates alone.
           </p>
         </article>
+      </section>
+
+      <section class="mode-grid">
+        <article class="mode-panel">
+          <p class="section-kicker">Offline design</p>
+          <h2>Explore the space before deployment.</h2>
+          <p>
+            Use ORACLE-MESH to scan design envelopes, propagate uncertainty through reduced
+            representations, and identify where high-fidelity computation is still worth paying for.
+          </p>
+        </article>
+        <article class="mode-panel alt">
+          <p class="section-kicker">Online orchestration</p>
+          <h2>Adapt when the operating picture shifts.</h2>
+          <p>
+            Run live assimilation and orchestration loops that coordinate observations,
+            surrogate updates, and intervention logic under tight latency and trust constraints.
+          </p>
+        </article>
+      </section>
+
+      <section class="panel manifesto">
+        <div class="manifesto-line">
+          <span>Calibrated uncertainty</span>
+          <span>Abstract state models</span>
+          <span>Operational adaptation</span>
+        </div>
       </section>
     </main>
 
