@@ -80,6 +80,7 @@
               <path id="readout1" d="M444 346 C492 318, 542 288, 602 254" />
               <path id="readout2" d="M431 376 C494 376, 540 377, 584 378" />
               <path id="readout3" d="M444 408 C492 436, 542 464, 602 500" />
+              <path id="figure8" d="M334 376 C350 350, 366 344, 380 376 C394 408, 410 402, 426 376 C410 350, 394 344, 380 376 C366 408, 350 402, 334 376 Z" />
             </defs>
 
             <rect x="0" y="0" width="760" height="760" fill="transparent" />
@@ -162,10 +163,10 @@
               <rect x="360" y="356" width="40" height="40" rx="10" fill="rgba(12, 31, 56, 0.65)" stroke="rgba(145, 168, 210, 0.45)" stroke-width="1.4" transform="rotate(45 380 376)">
                 <animateTransform attributeName="transform" type="rotate" values="45 380 376;405 380 376" dur="18s" repeatCount="indefinite" />
               </rect>
-              <circle cx="380" cy="376" r="4.3" fill="#7cf8d3" filter="url(#softGlow)" />
-              <circle cx="356" cy="352" r="2.7" fill="#8eb2ff" opacity="0.78" />
-              <circle cx="408" cy="396" r="2.4" fill="#6fe8ff" opacity="0.72" />
-              <circle cx="412" cy="346" r="2.2" fill="#7cf8d3" opacity="0.68" />
+              <circle cx="380" cy="376" r="4.3" fill="#7cf8d3" filter="url(#softGlow)">
+                <animate attributeName="r" values="3.5;5.5;3.5" dur="2.4s" repeatCount="indefinite" />
+                <animate attributeName="opacity" values="0.7;1;0.7" dur="2.4s" repeatCount="indefinite" />
+              </circle>
             </g>
 
             <g fill="none" stroke="url(#edgeGlow)" stroke-width="2.25" stroke-linecap="round">
