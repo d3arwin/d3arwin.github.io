@@ -1,3 +1,3 @@
-# ORACLE-MESH Website
+# D³ARWIN Website
 
-Public website for ORACLE-MESH.
+Public website for D³ARWIN (Dynamic Data-Driven Adaptive Reasoning With Inference Networks).
