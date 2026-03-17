@@ -40,8 +40,6 @@
     </nav>
     <header class="hero">
       <div class="hero-copy">
-        <p class="badge">ORION</p>
-        <p class="expansion">Online Robust Inference and Optimization for Networks</p>
         <h1>
           Distributed <span class="headline-accent">Reasoning Agents</span><br />
           for Real-Time Edge Decisions
@@ -76,41 +74,41 @@
                 <stop offset="50%" stop-color="#6fe8ff" stop-opacity="0.8" />
                 <stop offset="100%" stop-color="#7cf8d3" stop-opacity="0.08" />
               </linearGradient>
-              <path id="msg1" d="M196 232 C286 248, 328 292, 380 344" />
-              <path id="msg2" d="M196 380 C280 380, 326 378, 380 378" />
-              <path id="msg3" d="M196 510 C286 494, 328 458, 380 402" />
+              <path id="msg1" d="M196 256 C280 260, 312 300, 344 338" />
+              <path id="msg2" d="M196 380 C270 380, 302 376, 320 376" />
+              <path id="msg3" d="M196 510 C280 494, 314 454, 344 416" />
               <path id="readout1" d="M444 346 C492 318, 542 288, 602 254" />
-              <path id="readout2" d="M444 378 C502 378, 548 378, 600 378" />
+              <path id="readout2" d="M431 376 C494 376, 540 377, 584 378" />
               <path id="readout3" d="M444 408 C492 436, 542 464, 602 500" />
             </defs>
 
             <rect x="0" y="0" width="760" height="760" fill="transparent" />
-            <rect x="72" y="150" width="162" height="454" rx="28" fill="url(#panelGlow)" stroke="rgba(125, 176, 255, 0.18)" />
+            <rect x="72" y="150" width="162" height="500" rx="28" fill="url(#panelGlow)" stroke="rgba(125, 176, 255, 0.18)" />
             <rect x="300" y="228" width="160" height="292" rx="30" fill="url(#panelGlow)" stroke="rgba(111, 232, 255, 0.22)" />
             <rect x="532" y="176" width="154" height="388" rx="28" fill="url(#panelGlow)" stroke="rgba(125, 176, 255, 0.18)" />
 
             <g fill="#7cf8d3" font-family="Space Grotesk, sans-serif" font-size="9.8" letter-spacing="1.4">
-              <text x="153" y="176" text-anchor="middle">SUBSYSTEM NODES</text>
-              <text x="380" y="254" text-anchor="middle">MESSAGE PASSING GNN</text>
+              <text x="153" y="180" text-anchor="middle">SUBSYSTEM NODES</text>
+              <text x="380" y="254" text-anchor="middle">INFERENCE CORE</text>
               <text x="609" y="200" text-anchor="middle">READOUT / DECISION</text>
             </g>
 
             <g fill="#8fb2e3" font-family="Space Grotesk, sans-serif" font-size="7.8">
               <text x="153" y="190" text-anchor="middle">uncertain graph inputs</text>
-              <text x="380" y="268" text-anchor="middle">aggregate, update, propagate</text>
+              <text x="380" y="268" text-anchor="middle">latent fusion, uncertainty shaping</text>
               <text x="609" y="214" text-anchor="middle">belief and control outputs</text>
             </g>
 
             <g fill="none" stroke="rgba(145, 168, 210, 0.3)" stroke-width="1.8" stroke-linecap="round">
-              <path d="M124 232 L174 194 L196 266 L136 300 L124 232" />
-              <path d="M174 194 L196 266" />
-              <path d="M124 232 L196 266" />
-              <path d="M136 300 L196 266" />
+              <path d="M124 256 L174 218 L196 290 L136 324 L124 256" />
+              <path d="M174 218 L196 290" />
+              <path d="M124 256 L196 290" />
+              <path d="M136 324 L196 290" />
 
-              <path d="M118 420 L174 382 L212 432 L160 482 L118 420" />
-              <path d="M174 382 L212 432" />
-              <path d="M174 382 L160 482" />
-              <path d="M118 420 L160 482" />
+              <path d="M118 408 L174 370 L212 420 L160 470 L118 408" />
+              <path d="M174 370 L212 420" />
+              <path d="M174 370 L160 470" />
+              <path d="M118 408 L160 470" />
 
               <path d="M128 548 L186 516 L210 576 L156 602 L128 548" />
               <path d="M186 516 L210 576" />
@@ -119,15 +117,15 @@
             </g>
 
             <g fill="#0f1928" stroke="rgba(111, 232, 255, 0.35)" stroke-width="1.6">
-              <circle cx="124" cy="232" r="12" />
-              <circle cx="174" cy="194" r="12" />
-              <circle cx="196" cy="266" r="12" />
-              <circle cx="136" cy="300" r="12" />
+              <circle cx="124" cy="256" r="12" />
+              <circle cx="174" cy="218" r="12" />
+              <circle cx="196" cy="290" r="12" />
+              <circle cx="136" cy="324" r="12" />
 
-              <circle cx="118" cy="420" r="12" />
-              <circle cx="174" cy="382" r="12" />
-              <circle cx="212" cy="432" r="12" />
-              <circle cx="160" cy="482" r="12" />
+              <circle cx="118" cy="408" r="12" />
+              <circle cx="174" cy="370" r="12" />
+              <circle cx="212" cy="420" r="12" />
+              <circle cx="160" cy="470" r="12" />
 
               <circle cx="128" cy="548" r="12" />
               <circle cx="186" cy="516" r="12" />
@@ -136,14 +134,14 @@
             </g>
 
             <g fill="#eef5ff" font-family="Space Grotesk, sans-serif" font-size="8.5">
-              <text x="124" y="236" text-anchor="middle">GP</text>
-              <text x="174" y="198" text-anchor="middle">GP</text>
-              <text x="196" y="270" text-anchor="middle">GP</text>
-              <text x="136" y="304" text-anchor="middle">GP</text>
-              <text x="118" y="424" text-anchor="middle">GP</text>
-              <text x="174" y="386" text-anchor="middle">GP</text>
-              <text x="212" y="436" text-anchor="middle">GP</text>
-              <text x="160" y="486" text-anchor="middle">GP</text>
+              <text x="124" y="260" text-anchor="middle">GP</text>
+              <text x="174" y="222" text-anchor="middle">GP</text>
+              <text x="196" y="294" text-anchor="middle">GP</text>
+              <text x="136" y="328" text-anchor="middle">GP</text>
+              <text x="118" y="412" text-anchor="middle">GP</text>
+              <text x="174" y="374" text-anchor="middle">GP</text>
+              <text x="212" y="424" text-anchor="middle">GP</text>
+              <text x="160" y="474" text-anchor="middle">GP</text>
               <text x="128" y="552" text-anchor="middle">GP</text>
               <text x="186" y="520" text-anchor="middle">GP</text>
               <text x="210" y="580" text-anchor="middle">GP</text>
@@ -155,57 +153,59 @@
                 <animate attributeName="r" values="78;84;78" dur="4.6s" repeatCount="indefinite" />
                 <animate attributeName="opacity" values="0.34;0.56;0.34" dur="4.6s" repeatCount="indefinite" />
               </circle>
-              <circle cx="380" cy="324" r="17" fill="#10233f" stroke="rgba(111, 232, 255, 0.45)" stroke-width="1.8" />
-              <circle cx="346" cy="376" r="17" fill="#10233f" stroke="rgba(111, 232, 255, 0.45)" stroke-width="1.8" />
-              <circle cx="414" cy="376" r="17" fill="#10233f" stroke="rgba(111, 232, 255, 0.45)" stroke-width="1.8" />
-              <circle cx="380" cy="428" r="17" fill="#10233f" stroke="rgba(111, 232, 255, 0.45)" stroke-width="1.8" />
-              <path d="M380 324 L346 376 L414 376 L380 428 Z" fill="none" stroke="rgba(145, 168, 210, 0.32)" stroke-width="1.8" />
-              <path d="M346 376 L380 428" fill="none" stroke="rgba(145, 168, 210, 0.32)" stroke-width="1.8" />
-              <path d="M414 376 L380 428" fill="none" stroke="rgba(145, 168, 210, 0.32)" stroke-width="1.8" />
-              <text x="380" y="328" text-anchor="middle" fill="#eef5ff" font-size="8.1" font-family="Space Grotesk, sans-serif">MP</text>
-              <text x="346" y="380" text-anchor="middle" fill="#eef5ff" font-size="8.1" font-family="Space Grotesk, sans-serif">AGG</text>
-              <text x="414" y="380" text-anchor="middle" fill="#eef5ff" font-size="8.1" font-family="Space Grotesk, sans-serif">UPD</text>
-              <text x="380" y="432" text-anchor="middle" fill="#eef5ff" font-size="8.1" font-family="Space Grotesk, sans-serif">LAT</text>
+              <circle cx="380" cy="376" r="52" fill="none" stroke="rgba(111, 232, 255, 0.22)" stroke-width="1.6">
+                <animate attributeName="r" values="50;56;50" dur="6.0s" repeatCount="indefinite" />
+              </circle>
+              <circle cx="380" cy="376" r="32" fill="none" stroke="rgba(142, 178, 255, 0.34)" stroke-width="1.4" />
+              <path d="M334 376 C350 350, 366 344, 380 376 C394 408, 410 402, 426 376" fill="none" stroke="rgba(124, 248, 211, 0.58)" stroke-width="1.9" stroke-linecap="round" />
+              <path d="M334 376 C350 402, 366 408, 380 376 C394 344, 410 350, 426 376" fill="none" stroke="rgba(111, 232, 255, 0.48)" stroke-width="1.9" stroke-linecap="round" />
+              <rect x="360" y="356" width="40" height="40" rx="10" fill="rgba(12, 31, 56, 0.65)" stroke="rgba(145, 168, 210, 0.45)" stroke-width="1.4" transform="rotate(45 380 376)">
+                <animateTransform attributeName="transform" type="rotate" values="45 380 376;405 380 376" dur="18s" repeatCount="indefinite" />
+              </rect>
+              <circle cx="380" cy="376" r="4.3" fill="#7cf8d3" filter="url(#softGlow)" />
+              <circle cx="356" cy="352" r="2.7" fill="#8eb2ff" opacity="0.78" />
+              <circle cx="408" cy="396" r="2.4" fill="#6fe8ff" opacity="0.72" />
+              <circle cx="412" cy="346" r="2.2" fill="#7cf8d3" opacity="0.68" />
             </g>
 
             <g fill="none" stroke="url(#edgeGlow)" stroke-width="2.25" stroke-linecap="round">
-              <path d="M196 232 C286 248, 328 292, 380 344" />
-              <path d="M196 380 C280 380, 326 378, 380 378" />
-              <path d="M196 510 C286 494, 328 458, 380 402" />
+              <path d="M196 256 C280 260, 312 300, 344 338" />
+              <path d="M196 380 C270 380, 302 376, 320 376" />
+              <path d="M196 510 C280 494, 314 454, 344 416" />
               <path d="M444 346 C492 318, 542 288, 602 254" />
-              <path d="M444 378 C502 378, 548 378, 600 378" />
+              <path d="M431 376 C494 376, 540 377, 584 378" />
               <path d="M444 408 C492 436, 542 464, 602 500" />
             </g>
 
 
 
             <g>
-              <g transform="translate(252 270)">
+              <g transform="translate(267.5 265)">
                 <rect x="-30" y="-11" width="60" height="22" rx="7" fill="rgba(6, 20, 38, 0.62)" stroke="rgba(111, 232, 255, 0.28)" />
                 <path d="M-20 6 H20" fill="none" stroke="rgba(184, 201, 232, 0.30)" stroke-width="0.8" />
                 <path d="M-18 6 C-12 6, -7 -6, 0 -6 C7 -6, 12 6, 18 6" fill="none" stroke="#6fe8ff" stroke-width="0.9" />
               </g>
-              <g transform="translate(258 378)">
+              <g transform="translate(267 365)">
                 <rect x="-30" y="-11" width="60" height="22" rx="7" fill="rgba(6, 20, 38, 0.62)" stroke="rgba(111, 232, 255, 0.28)" />
                 <path d="M-20 6 H20" fill="none" stroke="rgba(184, 201, 232, 0.30)" stroke-width="0.8" />
                 <path d="M-18 6 C-10 6, -4 2, 0 1 C4 2, 10 6, 18 6" fill="none" stroke="#7cf8d3" stroke-width="0.9" />
               </g>
-              <g transform="translate(252 474)">
+              <g transform="translate(267 471)">
                 <rect x="-30" y="-11" width="60" height="22" rx="7" fill="rgba(6, 20, 38, 0.62)" stroke="rgba(111, 232, 255, 0.28)" />
                 <path d="M-20 6 H20" fill="none" stroke="rgba(184, 201, 232, 0.30)" stroke-width="0.8" />
                 <path d="M-18 6 C-14 6, -11 -5, -7 -5 C-3 -5, -1 6, 3 6 C7 6, 10 -2, 14 -2 C16 -2, 18 6, 18 6" fill="none" stroke="#8eb2ff" stroke-width="0.9" />
               </g>
-              <g transform="translate(522 306)">
+              <g transform="translate(496 290)">
                 <rect x="-30" y="-11" width="60" height="22" rx="7" fill="rgba(6, 20, 38, 0.62)" stroke="rgba(111, 232, 255, 0.28)" />
                 <path d="M-20 6 H20" fill="none" stroke="rgba(184, 201, 232, 0.30)" stroke-width="0.8" />
                 <path d="M-18 6 C-12 6, -8 5, -4 1 C0 -4, 8 -5, 18 6" fill="none" stroke="#6fe8ff" stroke-width="0.9" />
               </g>
-              <g transform="translate(520 378)">
+              <g transform="translate(496 365)">
                 <rect x="-30" y="-11" width="60" height="22" rx="7" fill="rgba(6, 20, 38, 0.62)" stroke="rgba(111, 232, 255, 0.28)" />
                 <path d="M-20 6 H20" fill="none" stroke="rgba(184, 201, 232, 0.30)" stroke-width="0.8" />
                 <path d="M-18 6 C-14 6, -10 2, -6 2 L4 2 C8 2, 12 6, 18 6" fill="none" stroke="#7cf8d3" stroke-width="0.9" />
               </g>
-              <g transform="translate(522 446)">
+              <g transform="translate(496 451)">
                 <rect x="-30" y="-11" width="60" height="22" rx="7" fill="rgba(6, 20, 38, 0.62)" stroke="rgba(111, 232, 255, 0.28)" />
                 <path d="M-20 6 H20" fill="none" stroke="rgba(184, 201, 232, 0.30)" stroke-width="0.8" />
                 <path d="M-18 6 C-14 6, -11 -1, -8 -3 C-4 -5, 2 -5, 8 0 C12 3, 15 5, 18 6" fill="none" stroke="#8eb2ff" stroke-width="0.9" />
@@ -266,6 +266,7 @@
 
       <section class="grid use-cases">
         <article class="card">
+          <span class="material-symbols-rounded panel-symbol" aria-hidden="true">hub</span>
           <p class="card-index">01</p>
           <h3>Multiscale information assimilation</h3>
           <p>
@@ -274,6 +275,7 @@
           </p>
         </article>
         <article class="card">
+          <span class="material-symbols-rounded panel-symbol" aria-hidden="true">diversity_3</span>
           <p class="card-index">02</p>
           <h3>Cooperative reasoning agents</h3>
           <p>
@@ -282,6 +284,7 @@
           </p>
         </article>
         <article class="card">
+          <span class="material-symbols-rounded panel-symbol" aria-hidden="true">memory</span>
           <p class="card-index">03</p>
           <h3>Real-time edge prediction</h3>
           <p>
@@ -293,6 +296,7 @@
 
       <section class="mode-grid" id="modes">
         <article class="mode-panel">
+          <span class="material-symbols-rounded panel-symbol mode-symbol" aria-hidden="true">architecture</span>
           <p class="section-kicker">Offline design</p>
           <h2>Shape the multiscale reasoning architecture before deployment.</h2>
           <p>
@@ -302,6 +306,7 @@
           </p>
         </article>
         <article class="mode-panel alt">
+          <span class="material-symbols-rounded panel-symbol mode-symbol" aria-hidden="true">settings_input_antenna</span>
           <p class="section-kicker">Online orchestration</p>
           <h2>Maintain adaptation as edge conditions evolve in real time.</h2>
           <p>
@@ -323,7 +328,7 @@
     </main>
 
     <footer>
-      <p>ORION</p>
+      <p>ORION &middot; Texas A&amp;M University</p>
     </footer>
     <script src="assets/js/ui-effects.js"></script>
   </body>

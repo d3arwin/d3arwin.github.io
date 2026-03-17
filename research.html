@@ -42,83 +42,137 @@
 
     <header class="page-hero">
       <p class="badge">Research</p>
-      <h1>Technical vision</h1>
+      <h1>D<sup>3</sup>ARWIN</h1>
       <p class="lede">
-        ORION develops the algorithmic and systems foundations for distributed,
-        uncertainty-aware decision-making at the edge. The research spans
-        multiscale inference, cooperative reasoning agents, and real-time
-        optimization under resource and communication constraints.
+        Dynamic Data-Driven Adaptive Reasoning With Inference Networks.
+        This page summarizes the D<sup>3</sup>ARWIN research product, including motivation,
+        technical core, and the three operational thrusts for deployment-ready,
+        uncertainty-aware decision support.
       </p>
     </header>
 
     <main>
-      <section class="panel mission">
-        <div>
-          <p class="section-kicker">Core question</p>
-          <h2>How do distributed agents make good decisions in real time when models are uncertain and resources are limited?</h2>
-        </div>
-        <p>
-          Modern operational systems generate observations across many spatial and
-          temporal scales, yet decisions must often be made locally, quickly, and with
-          incomplete information. ORION addresses this by coordinating networks of
-          reasoning agents that assimilate heterogeneous data, propagate calibrated
-          uncertainty, and produce actionable inference on edge hardware.
-        </p>
-      </section>
+      <section class="panel research-product">
+        <div class="product-layout">
+          <div>
+            <p class="section-kicker">Research Product</p>
+            <h2>D<sup>3</sup>ARWIN</h2>
+            <p class="product-expansion">Dynamic Data-Driven Adaptive Reasoning With Inference Networks</p>
+            <p>
+              D<sup>3</sup>ARWIN is motivated by the need for dependable, distributed
+              decision intelligence when sensing, models, and compute are all imperfect.
+              It organizes uncertainty-aware inference and coordination into a unified
+              workflow so edge systems can maintain reliable performance under shift,
+              partial observability, and communication constraints.
+            </p>
+            <p>
+              In practice, D<sup>3</sup>ARWIN couples evidence assimilation,
+              belief coordination, and robust action selection into a single loop:
+              combine uncertain observations, reconcile local and shared model context,
+              and output decisions with explicit confidence and safety margin awareness.
+            </p>
+          </div>
+          <div class="product-connector" aria-hidden="true"></div>
+          <figure class="product-figure" aria-label="Abstract D³ARWIN summary diagram">
+            <svg viewBox="0 0 660 380" role="img" aria-label="Abstract flow for D³ARWIN">
+              <defs>
+                <linearGradient id="darwinPanel" x1="0" x2="1" y1="0" y2="1">
+                  <stop offset="0%" stop-color="rgba(15, 36, 60, 0.92)" />
+                  <stop offset="100%" stop-color="rgba(9, 17, 30, 0.92)" />
+                </linearGradient>
+                <marker id="dotEnd" viewBox="0 0 6 6" refX="3" refY="3" markerWidth="5" markerHeight="5">
+                  <circle cx="3" cy="3" r="2.4" fill="rgba(116, 246, 255, 0.6)" />
+                </marker>
+                <marker id="dotStart" viewBox="0 0 6 6" refX="3" refY="3" markerWidth="5" markerHeight="5">
+                  <circle cx="3" cy="3" r="2.4" fill="rgba(116, 246, 255, 0.45)" />
+                </marker>
+              </defs>
 
-      <section class="grid use-cases">
-        <article class="card">
-          <p class="card-index">01</p>
-          <h3>Multiscale inference and assimilation</h3>
-          <p>
-            Fusing observations, surrogate models, and high-fidelity simulations
-            across scales into coherent probabilistic state estimates that remain
-            useful as operating conditions shift.
-          </p>
-        </article>
-        <article class="card">
-          <p class="card-index">02</p>
-          <h3>Cooperative reasoning agents</h3>
-          <p>
-            Designing agent networks that exchange beliefs, reconcile local context,
-            and coordinate inference and control across distributed platforms with
-            constrained communication.
-          </p>
-        </article>
-        <article class="card">
-          <p class="card-index">03</p>
-          <h3>Real-time edge optimization</h3>
-          <p>
-            Placing uncertainty-aware inference and decision logic on edge devices
-            where latency, compute, and bandwidth constraints make centralized
-            processing infeasible.
-          </p>
-        </article>
-        <article class="card">
-          <p class="card-index">04</p>
-          <h3>Robust decision-making under uncertainty</h3>
-          <p>
-            Developing control and optimization methods that account for model
-            uncertainty, distributional shifts, and incomplete observability
-            in safety-critical and time-sensitive settings.
-          </p>
-        </article>
-      </section>
+              <!-- outer panel -->
+              <rect x="12" y="12" width="636" height="356" rx="22" fill="url(#darwinPanel)" stroke="rgba(116, 246, 255, 0.22)" stroke-width="1.2" />
 
-      <section class="panel mission">
-        <div>
-          <p class="section-kicker">Publications</p>
-          <h2>Selected work</h2>
+              <!-- core glow rings -->
+              <g fill="rgba(116, 246, 255, 0.05)">
+                <circle cx="290" cy="174" r="72" />
+                <circle cx="290" cy="174" r="48" />
+              </g>
+
+              <!-- connection paths -->
+              <g fill="none" stroke="rgba(116, 246, 255, 0.38)" stroke-width="1.6" stroke-linecap="round">
+                <!-- GP-FSM → Core -->
+                <path d="M200 170 C228 170, 238 172, 255 174" marker-start="url(#dotStart)" marker-end="url(#dotEnd)" />
+                <!-- Core → Aim 1 -->
+                <path d="M325 152 C355 128, 380 96, 410 76" marker-start="url(#dotStart)" marker-end="url(#dotEnd)" />
+                <!-- Core → Aim 2 -->
+                <path d="M325 174 C358 174, 382 174, 410 174" marker-start="url(#dotStart)" marker-end="url(#dotEnd)" />
+                <!-- Core → Aim 3 -->
+                <path d="M325 196 C355 222, 380 256, 410 276" marker-start="url(#dotStart)" marker-end="url(#dotEnd)" />
+                <!-- Core → tech strip -->
+                <path d="M290 222 C290 260, 290 290, 290 322" marker-start="url(#dotStart)" marker-end="url(#dotEnd)" />
+              </g>
+
+              <!-- boxes -->
+              <g fill="#0d1f35" stroke="rgba(116, 246, 255, 0.35)" stroke-width="1.3">
+                <!-- GP-FSM: 2 lines, medium width -->
+                <rect x="36" y="144" width="164" height="52" rx="14" />
+                <!-- Core -->
+                <rect x="255" y="128" width="70" height="92" rx="18" fill="rgba(22, 55, 90, 0.55)" stroke="rgba(116, 246, 255, 0.5)" />
+                <!-- Aim 1 -->
+                <rect x="410" y="46" width="184" height="48" rx="14" />
+                <!-- Aim 2 -->
+                <rect x="410" y="148" width="184" height="48" rx="14" />
+                <!-- Aim 3 -->
+                <rect x="410" y="254" width="158" height="44" rx="14" />
+                <!-- Tech strip -->
+                <rect x="140" y="322" width="368" height="26" rx="11" />
+              </g>
+
+              <!-- icon badges -->
+              <g fill="rgba(124, 248, 211, 0.88)" stroke="rgba(15, 31, 52, 0.7)" stroke-width="0.8">
+                <circle cx="52" cy="160" r="4.5" />
+                <rect x="282" y="138" width="8" height="8" rx="2" />
+                <polygon points="426,58 431,69 421,69" />
+                <polygon points="426,160 431,171 421,171" />
+                <polygon points="426,266 431,277 421,277" />
+                <rect x="152" y="331" width="7" height="7" rx="1.5" />
+              </g>
+
+              <!-- labels -->
+              <g fill="#eaf5ff" font-family="Space Grotesk, sans-serif">
+                <!-- GP-FSM -->
+                <text x="118" y="165" font-size="8" text-anchor="middle">GP-FSM State Estimation</text>
+                <text x="118" y="179" font-size="6.4" text-anchor="middle" fill="rgba(234,245,255,0.7)">situational awareness on graph</text>
+
+                <!-- Core -->
+                <text x="290" y="162" font-size="8.6" text-anchor="middle" font-weight="500">D³ARWIN</text>
+                <text x="290" y="175" font-size="8.6" text-anchor="middle" font-weight="500">Core</text>
+                <text x="290" y="190" font-size="5.6" text-anchor="middle" fill="rgba(234,245,255,0.65)">uncertainty-aware</text>
+                <text x="290" y="201" font-size="5.6" text-anchor="middle" fill="rgba(234,245,255,0.65)">decision loop</text>
+
+                <!-- Aim 1 -->
+                <text x="443" y="68" font-size="7.4" text-anchor="start">Offline strategic, tactical,</text>
+                <text x="443" y="81" font-size="7.4" text-anchor="start">and computational preparedness</text>
+
+                <!-- Aim 2 -->
+                <text x="443" y="170" font-size="7.4" text-anchor="start">Optimal dynamic data-driven</text>
+                <text x="443" y="183" font-size="7.4" text-anchor="start">response to changing conditions</text>
+
+                <!-- Aim 3 -->
+                <text x="443" y="274" font-size="7.4" text-anchor="start">In silico demonstration of</text>
+                <text x="443" y="287" font-size="7.4" text-anchor="start">mission effectiveness</text>
+
+                <!-- Tech strip -->
+                <text x="324" y="339" font-size="6.4" text-anchor="middle" fill="rgba(234,245,255,0.8)">Networked GPs  |  Automata Theory  |  Data Assimilation on Graphs  |  DRL on Graphs</text>
+              </g>
+            </svg>
+            <figcaption>Technical map: GP-FSM state estimation feeds the D³ARWIN core, which supports preparedness, dynamic response, and in silico performance validation.</figcaption>
+          </figure>
         </div>
-        <p>
-          Publication list coming soon. For current work, see the faculty profiles
-          on the <a class="inline-link" href="about.html">About</a> page.
-        </p>
       </section>
     </main>
 
     <footer>
-      <p>ORION</p>
+      <p>ORION &middot; Texas A&amp;M University</p>
     </footer>
     <script src="assets/js/ui-effects.js"></script>
   </body>
