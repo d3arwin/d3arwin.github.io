@@ -767,12 +767,106 @@ canvas {
   overflow-x: auto;
 }
 
+.section-heading {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-bright);
+  margin: 2.5rem 0 1rem;
+  letter-spacing: 0.02em;
+}
+
+.section-heading:first-of-type {
+  margin-top: 0;
+}
+
 .about-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.15rem;
 }
 
+/* Founders: 1x2 compact row */
+.founders-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+
+.profile-card-compact {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-radius: var(--radius-xl);
+  padding: 1rem;
+  background:
+    radial-gradient(circle at top right, rgba(116, 246, 255, 0.1), transparent 38%),
+    linear-gradient(180deg, rgba(13, 22, 35, 0.86), rgba(8, 13, 20, 0.74));
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(16px);
+}
+
+.profile-card-compact img {
+  width: 110px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid rgba(163, 184, 255, 0.16);
+  flex-shrink: 0;
+}
+
+.profile-card-compact > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.profile-card-compact h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-bright);
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.profile-card-compact .profile-role {
+  font-size: 0.85rem;
+  color: var(--accent);
+  margin: 0;
+}
+
+.profile-card-compact .profile-affiliation {
+  font-size: 0.8rem;
+  color: var(--text-soft);
+  margin: 0;
+}
+
+.profile-card-compact .profile-expertise {
+  font-size: 0.78rem;
+  color: var(--text-soft);
+  margin: 0.15rem 0 0;
+  font-style: italic;
+}
+
+.profile-card-compact .profile-links {
+  margin: 0.25rem 0 0;
+}
+
+@media (max-width: 600px) {
+  .founders-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Affiliates: compact grid */
+.affiliates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+/* Legacy full profile card */
 .profile-card {
   display: grid;
   grid-template-columns: 200px minmax(0, 1fr);
