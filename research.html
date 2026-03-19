@@ -182,9 +182,9 @@
 
       <h2 class="section-heading">Core Technical Innovations</h2>
       <p style="color:var(--text-soft); margin: -0.5rem 0 1rem; max-width: 72ch;">
-        Six interlocking technical advances form the computational foundation of
-        <span class="darwin-brand">D³ARWIN</span>. Each is independently novel; together they constitute a
-        closed-loop architecture for uncertainty-aware decision intelligence at the edge.
+        Six interlocking advances form the computational backbone of
+        <span class="darwin-brand">D³ARWIN</span>. Each solves a distinct operational bottleneck; together they close the loop
+        from raw sensor data to certifiable, uncertainty-aware decisions at the edge.
       </p>
 
       <div class="grid">
@@ -193,42 +193,42 @@
           <span class="material-symbols-rounded panel-symbol">hub</span>
           <p class="section-kicker">Situational Awareness</p>
           <h3>GP-Finite State Machine</h3>
-          <p>The mission options space is represented as a finite automaton where each node is a Gaussian process. Sensor observations drive posterior state estimation across the graph, producing principled situational awareness in partially observable, dynamically evolving environments.</p>
+          <p>Maps the full mission option space as a graph of Gaussian processes. As sensor data streams in, the system tracks which operational state the vehicle is in, what it can transition to, and how confident it should be, even when the environment is only partially observable.</p>
         </article>
 
         <article class="card">
           <span class="material-symbols-rounded panel-symbol">schema</span>
           <p class="section-kicker">Physics-Informed Surrogates</p>
           <h3>Networked Deep Gaussian Processes</h3>
-          <p>A hierarchical network of physics-informed GP components models coupled multi-physics domains: aerodynamics, structures, propulsion, and flight dynamics. Coupling interfaces propagate calibrated uncertainty through the network topology without requiring separate coupling models.</p>
+          <p>Chains physics-grounded GP components (aero, structures, propulsion, flight dynamics) into a single surrogate network. Uncertainty flows through coupling interfaces automatically, so every downstream prediction carries a calibrated confidence bound without bolting on a separate error model.</p>
         </article>
 
         <article class="card">
           <span class="material-symbols-rounded panel-symbol">sync_alt</span>
           <p class="section-kicker">Real-Time State Estimation</p>
           <h3>Data Assimilation on Graphs</h3>
-          <p>Graph signal processing integrates streaming sensor data across GP networks. Uncertainty propagates through graph diffusion operators governed by network topology, while Bayesian information fusion continuously updates posterior state distributions as new observations arrive.</p>
+          <p>Performs Bayesian fusion over the graph-structured surrogate network, conditioning GP posteriors on live sensor data and propagating updated beliefs across nodes. Graph signal processing methods accelerate the propagation step, avoiding full matrix inversions at scale while preserving calibrated uncertainty throughout the network.</p>
         </article>
 
         <article class="card">
           <span class="material-symbols-rounded panel-symbol">tune</span>
           <p class="section-kicker">Adaptive Runtime Fidelity</p>
           <h3>Dialable-Fidelity Digital Twin</h3>
-          <p>Certified link-reduction approximations allow the surrogate network to transition between high-fidelity offline analysis and low-latency onboard prediction. Each reduced mode is validated against the full reference model with conservative uncertainty adjustments, preserving safety margin consistency across fidelity tiers.</p>
+          <p>Lets the system dial between high-fidelity offline analysis and low-latency onboard prediction through certified link-reduction approximations. Each reduced mode is validated against the full reference model with conservative uncertainty adjustments, preserving a traceable fidelity chain for certification.</p>
         </article>
 
         <article class="card">
           <span class="material-symbols-rounded panel-symbol">query_stats</span>
           <p class="section-kicker">Uncertainty Quantification</p>
           <h3>Bayesian-Agentic UQ Framework</h3>
-          <p>Model refinement is formulated as a sequential decision problem. A computational agent allocates fidelity by optimizing over prediction error, confidence bounds, and computational cost, distinguishing epistemic from aleatoric uncertainty and directing refinement only where it produces operationally meaningful improvement.</p>
+          <p>Treats model refinement as a resource allocation problem. An autonomous agent decides where to spend compute by weighing prediction error against confidence bounds and latency, distinguishing what the model does not know from what is inherently noisy, and refining only where it moves the needle operationally.</p>
         </article>
 
         <article class="card">
           <span class="material-symbols-rounded panel-symbol">psychology</span>
-          <p class="section-kicker">Policy Optimization</p>
-          <h3>Deep Reinforcement Learning on Graphs</h3>
-          <p>A DRL agent learns decision policies within the GP-FSM framework. GP posteriors provide risk-aware reward signals and probabilistic action evaluation, enabling continuous policy refinement across mission scenarios with quantified safety margins and explicit uncertainty budgets.</p>
+          <p class="section-kicker">Guidance &amp; Decision Synthesis</p>
+          <h3>Uncertainty-Aware Planning &amp; Control</h3>
+          <p>Computes guidance and control actions directly on the GP-FSM graph in real time. The framework is solver-agnostic: reinforcement learning, model-predictive control, or any successive approximation method can plug into the same uncertainty-rich graph structure. As posteriors update, the planner re-evaluates candidate actions against current confidence bounds, delivering low-latency decisions with quantified safety margins even as the operational picture shifts mid-mission.</p>
         </article>
 
       </div>
