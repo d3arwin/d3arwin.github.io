@@ -195,7 +195,7 @@ footer {
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 0.95fr) minmax(480px, 1.05fr);
+  grid-template-columns: minmax(0, 0.8fr) minmax(540px, 1.2fr);
   gap: 2.4rem;
   align-items: stretch;
   padding: 3rem 0 2.6rem;
